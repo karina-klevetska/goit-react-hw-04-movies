@@ -1,0 +1,16 @@
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.movies-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.movies-link:hover {
+  -webkit-box-shadow: 3px 4px 32px 4px #850000;
+  box-shadow: 3px 4px 32px 4px #850000;
+}

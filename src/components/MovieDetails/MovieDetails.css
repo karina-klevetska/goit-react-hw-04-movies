@@ -1,0 +1,14 @@
+.movie-details-wrapper {
+  display: flex;
+  color: white;
+  padding: 20px 0 20px 0;
+}
+
+.movie-title {
+  color: #850000;
+}
+
+.movie-info-container {
+  margin-left: 30px;
+  text-align: start;
+}

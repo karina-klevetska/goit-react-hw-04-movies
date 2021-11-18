@@ -1,0 +1,12 @@
+.cast-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.cast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

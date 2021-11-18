@@ -1,0 +1,27 @@
+nav {
+  padding: 20px 0 20px 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item--margin {
+  margin-left: 20px;
+}
+
+.nav-link {
+  font-size: 24px;
+  color: #850000;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #a50000;
+}
+
+.is-active {
+  border-bottom: 3px solid #850000;
+}
