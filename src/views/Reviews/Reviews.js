@@ -14,7 +14,7 @@ export const Reviews = ({ movieId }) => {
   }, [movieId])
 
   if (reviews && reviews.length === 0) {
-    return <p>There are no reviews on this movie</p>
+    return <p className='no-results'>There are no reviews on this movie</p>
   }
 
   return (
