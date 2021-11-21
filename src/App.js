@@ -2,11 +2,9 @@ import './App.css'
 import { Route } from 'react-router'
 import { Switch } from 'react-router'
 import { Navigation } from './components/Navigation/Navigation'
-// import { HomePage } from './views/HomePage/HomePage'
-// import { MoviesPage } from './views/MoviesPage/MoviesPage'
-// import { MovieDetailsPage } from './views/MovieDetailsPage/MovieDetailsPage'
 import { NotFoundView } from './views/NotFoundView/NotFoundView'
 import { lazy, Suspense } from 'react'
+import Loader from 'react-loader-spinner'
 
 const HomePage = lazy(() =>
   import('./views/HomePage/HomePage' /* webpackChunkName: "HomePage" */)
@@ -26,7 +24,11 @@ function App() {
       <header>
         <Navigation />
       </header>
-      <Suspense fallback='loading...'>
+      <Suspense
+        fallback={
+          <Loader type='ThreeDots' color='#850000' height={80} width={80} />
+        }
+      >
         <Switch>
           <Route path='/' exact>
             <HomePage />
